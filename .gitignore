@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# uv / PEP-723 script cache
+.uv/
+
+# Local skill run artifacts — a video fetch writes these next to the CWD by default
+frames/
+contact-sheet*.jpg
+FRAMES.md
+transcript.md
+meta.json
+REPORT.md
+URL.txt
