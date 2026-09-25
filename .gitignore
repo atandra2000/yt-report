@@ -18,3 +18,6 @@ transcript.md
 meta.json
 REPORT.md
 URL.txt
+
+# Agent session state — machine-local, not product source
+.claude/
