@@ -1,0 +1,116 @@
+  note: model observations are read from the 'vlm' block of visual.json
+  BLOCK  claim-unsupported  extracted_details/entities: 'statement' is not present in the evidence document
+  BLOCK  claim-unsupported  extracted_details/entities: 'statement' is not present in the evidence document
+  BLOCK  claim-unsupported  extracted_details/entities: 'statement' is not present in the evidence document
+  BLOCK  claim-unsupported  extracted_details/entities: 'statement' is not present in the evidence document
+  BLOCK  claim-unsupported  extracted_details/entities: 'statement' is not present in the evidence document
+  BLOCK  claim-unsupported  extracted_details/numbers: 'referent' is not present in the evidence document
+  BLOCK  claim-unsupported  extracted_details/numbers: 'referent' is not present in the evidence document
+  BLOCK  claim-unsupported  extracted_details/numbers: 'referent' is not present in the evidence document
+REPORT.md not written: 8 grounding failure(s)
+~/Desktop/yt-reports/this-new-jev-claude-os-just-changed-every-ai-workflow-EOdXR6lU5ZA/evidence.json
+{
+  "alignment": {
+    "snippets_processed": 645,
+    "candidate_frames_considered": 297,
+    "aligned_snippets": 248,
+    "no_relevant_frame": 397,
+    "aligned_frame_links": 277,
+    "distinct_frames_used": 51,
+    "frames_total": 51,
+    "frames_unmeasured_excluded": 0,
+    "methods": {
+      "no-relevant-frame": 397,
+      "ocr-assisted": 2,
+      "overlap": 91,
+      "segment-context": 155
+    }
+  },
+  "semantic": {
+    "segments_processed": 6,
+    "observations_classified": 3022,
+    "observations_by_class": {
+      "ambiguous": 2329,
+      "caption": 230,
+      "decorative": 6,
+      "irrelevant": 145,
+      "meaningful": 132,
+      "ui-chrome": 126,
+      "unreadable": 54
+    },
+    "items_total": 143,
+    "items_by_type": {
+      "claim": 5,
+      "claim_metric": 3,
+      "comparison": 1,
+      "definition": 14,
+      "link": 7,
+      "model": 3,
+      "number": 92,
+      "organization": 3,
+      "person": 1,
+      "product": 12,
+      "tool": 1,
+      "topic": 1
+    },
+    "items_by_importance": {
+      "high": 98,
+      "medium": 36,
+      "unassessed": 9
+    },
+    "items_by_source": {
+      "metadata": 9,
+      "ocr": 136,
+      "transcript": 60
+    },
+    "screen_only_items": 80,
+    "cross_modal_items": 7,
+    "items_folded_by_dedup": 58,
+    "items_dropped_by_cap": 0,
+    "conflicts_detected": 0,
+    "model_calls": 0,
+    "extraction_calls": 6,
+    "cache_hits": 1,
+    "cache_hit_rate": 0.1667,
+    "wall_s": 0.453,
+    "config": {
+      "min_steps_in_segment": 2,
+      "max_items_per_segment": 80,
+      "enable_comparisons": true,
+      "enable_steps": true,
+      "enable_entities": true,
+      "enable_vlm": true,
+      "policy": {
+        "base_transcript": 0.9,
+        "base_labelled_screen": 0.78,
+        "base_unlabelled_screen": 0.55,
+        "cross_modal_bonus": 0.08,
+        "hedge_penalty": 0.15,
+        "base_vlm": 0.6,
+        "ceiling": 0.95
+      }
+    }
+  },
+  "vlm": {
+    "status": "empty",
+    "backend": "openrouter",
+    "model": "stealth/space-bunny-alpha",
+    "model_version": "stealth/space-bunny-alpha",
+    "frames_total": 51,
+    "candidates_considered": 51,
+    "frames_selected": 6,
+    "frames_not_budgeted": 45,
+    "max_vlm_frames": 6,
+    "frames_analysed": 0,
+    "vlm_calls": 6,
+    "calls_ok": 0,
+    "calls_failed": 6,
+    "cache_hits": 0,
+    "cache_misses": 6,
+    "cache_hit_rate": 0.0,
+    "estimated_cost_usd": null,
+    "vlm_wall_s": 717.836,
+    "notes": null
+  }
+}
+VALID  ~/Desktop/yt-reports/this-new-jev-claude-os-just-changed-every-ai-workflow-EOdXR6lU5ZA/evidence.json

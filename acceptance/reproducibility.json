@@ -1,0 +1,42 @@
+{
+  "source": "~/Desktop/yt-reports/but-what-is-a-neural-network-deep-learning-chapter-1-aircAruvnKk",
+  "runs": 2,
+  "cache": "warm on the second run",
+  "deterministic_layers": [
+    "evidence extraction",
+    "report rendering"
+  ],
+  "nondeterministic_layers": [
+    "any live model call (VLM, synthesis, critic)"
+  ],
+  "volatile_fields_excluded": [
+    "cache",
+    "elapsed_ms",
+    "fetched_at",
+    "generated_at",
+    "latency_s",
+    "observed_at",
+    "run_at",
+    "vlm_wall_s",
+    "wall_s"
+  ],
+  "checks": {
+    "evidence.json is structurally identical": true,
+    "evidence.json is byte-identical": true,
+    "REPORT.md is byte-identical": true,
+    "REPORT.json is structurally identical": true,
+    "frames.json is structurally identical": true,
+    "alignment.json is structurally identical": true,
+    "evidence ids are unique": true,
+    "every frame carries a measured timestamp": true,
+    "the report still carries provenance markers": true
+  },
+  "evidence_sha": {
+    "cold": "879910352549f8a479ca2b83f4883d8265531ef1de91424820b13b32bef42696",
+    "warm": "879910352549f8a479ca2b83f4883d8265531ef1de91424820b13b32bef42696"
+  },
+  "report_sha": {
+    "cold": "dba9c0db61c795fa1e9a48eb2a79c0d1542dae8720087a0db6e3dc65e86c3df9",
+    "warm": "dba9c0db61c795fa1e9a48eb2a79c0d1542dae8720087a0db6e3dc65e86c3df9"
+  }
+}

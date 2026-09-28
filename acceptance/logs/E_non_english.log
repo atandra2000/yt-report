@@ -1,0 +1,165 @@
+{
+  "status": "ok",
+  "dir": "~/Desktop/yt-reports/das-ist-der-furchtbarste-ort-im-universum-5_jcvQ0-vhI",
+  "url": "https://www.youtube.com/watch?v=5_jcvQ0-vhI",
+  "video_id": "5_jcvQ0-vhI",
+  "title": "Das ist der furchtbarste Ort im Universum",
+  "duration_min": 9.3,
+  "chapters": 5,
+  "chapters_source": "inferred",
+  "transcript_lang": "de (human)",
+  "asr": false,
+  "cached": false,
+  "words": 1041,
+  "transcript_note": null,
+  "visual": {
+    "status": "ok",
+    "frames": 31,
+    "measured_timestamps": 31,
+    "near_duplicates_dropped": 1,
+    "uniform_step_s": 29.3,
+    "contact_sheets": [
+      "contact-sheet-1.jpg",
+      "contact-sheet-2.jpg"
+    ]
+  },
+  "ocr": {
+    "status": "ok",
+    "backend": "apple-vision",
+    "frames_total": 31,
+    "frames_read": 28,
+    "frames_with_text": 9,
+    "frames_no_text": 19,
+    "frames_repeated": 3,
+    "low_confidence_frames": 1,
+    "medium_confidence_frames": 0,
+    "verbatim_eligible": 8,
+    "text_chars": 126,
+    "mean_confidence": 0.9222,
+    "ocr_wall_s": 2.842,
+    "notes": null
+  },
+  "vlm": {
+    "status": "skipped",
+    "reason": "--vlm none"
+  },
+  "evidence": {
+    "status": "failed",
+    "error": "cannot read ~/Desktop/yt-reports/das-ist-der-furchtbarste-ort-im-universum-5_jcvQ0-vhI/evidence.json: [Errno 2] No such file or directory: '~/Desktop/yt-reports"
+  }
+}
+--- fetch rc=0 51s
+--- artifact: ~/Desktop/yt-reports/das-ist-der-furchtbarste-ort-im-universum-5_jcvQ0-vhI
+  note: model observations are read from the 'vlm' block of visual.json
+~/Desktop/yt-reports/das-ist-der-furchtbarste-ort-im-universum-5_jcvQ0-vhI/evidence.json
+{
+  "alignment": {
+    "snippets_processed": 77,
+    "candidate_frames_considered": 67,
+    "aligned_snippets": 42,
+    "no_relevant_frame": 35,
+    "aligned_frame_links": 53,
+    "distinct_frames_used": 30,
+    "frames_total": 31,
+    "frames_unmeasured_excluded": 0,
+    "methods": {
+      "no-relevant-frame": 35,
+      "overlap": 25,
+      "segment-context": 17
+    }
+  },
+  "semantic": {
+    "segments_processed": 5,
+    "observations_classified": 17,
+    "observations_by_class": {
+      "ambiguous": 14,
+      "caption": 2,
+      "unreadable": 1
+    },
+    "items_total": 62,
+    "items_by_type": {
+      "claim": 1,
+      "link": 27,
+      "number": 3,
+      "organization": 1,
+      "product": 29,
+      "topic": 1
+    },
+    "items_by_importance": {
+      "high": 2,
+      "medium": 29,
+      "unassessed": 31
+    },
+    "items_by_source": {
+      "metadata": 31,
+      "ocr": 2,
+      "transcript": 38
+    },
+    "screen_only_items": 0,
+    "cross_modal_items": 2,
+    "items_folded_by_dedup": 7,
+    "items_dropped_by_cap": 0,
+    "conflicts_detected": 0,
+    "model_calls": 0,
+    "extraction_calls": 5,
+    "cache_hits": 0,
+    "cache_hit_rate": 0.0,
+    "wall_s": 0.024,
+    "config": {
+      "min_steps_in_segment": 2,
+      "max_items_per_segment": 80,
+      "enable_comparisons": true,
+      "enable_steps": true,
+      "enable_entities": true,
+      "enable_vlm": true,
+      "policy": {
+        "base_transcript": 0.9,
+        "base_labelled_screen": 0.78,
+        "base_unlabelled_screen": 0.55,
+        "cross_modal_bonus": 0.08,
+        "hedge_penalty": 0.15,
+        "base_vlm": 0.6,
+        "ceiling": 0.95
+      }
+    }
+  },
+  "vlm": {
+    "status": "unavailable",
+    "backend": "unavailable",
+    "model": "none",
+    "model_version": null,
+    "frames_total": 31,
+    "candidates_considered": 30,
+    "frames_selected": 8,
+    "frames_not_budgeted": 22,
+    "max_vlm_frames": 8,
+    "frames_analysed": 0,
+    "vlm_calls": 0,
+    "calls_ok": 0,
+    "calls_failed": 0,
+    "frames_not_analysed": 8,
+    "cache_hits": 0,
+    "cache_misses": 0,
+    "cache_hit_rate": null,
+    "estimated_cost_usd": null,
+    "vlm_wall_s": 0.002,
+    "notes": "no VLM pass requested (--vlm none)"
+  }
+}
+VALID  ~/Desktop/yt-reports/das-ist-der-furchtbarste-ort-im-universum-5_jcvQ0-vhI/evidence.json
+VALID  ~/Desktop/yt-reports/das-ist-der-furchtbarste-ort-im-universum-5_jcvQ0-vhI/REPORT.md  [deterministic]
+  114 words · balanced · provenance 100% · 24/62 evidence items used · repetition 0.7% · 3 sections
+  ~/Desktop/yt-reports/das-ist-der-furchtbarste-ort-im-universum-5_jcvQ0-vhI/REPORT.json
+--- build rc=0 0s
+  note: model observations are read from the 'vlm' block of visual.json
+  synthesis unavailable — no synthesis model configured
+VALID  ~/Desktop/yt-reports/das-ist-der-furchtbarste-ort-im-universum-5_jcvQ0-vhI/REPORT.md  [deterministic]
+  114 words · balanced · provenance 100% · 24/62 evidence items used · repetition 0.7% · 3 sections
+  ~/Desktop/yt-reports/das-ist-der-furchtbarste-ort-im-universum-5_jcvQ0-vhI/REPORT.json
+--- output-language en rc=0 0s
+  note: model observations are read from the 'vlm' block of visual.json
+  synthesis unavailable — no synthesis model configured
+VALID  ~/Desktop/yt-reports/das-ist-der-furchtbarste-ort-im-universum-5_jcvQ0-vhI/REPORT.md  [deterministic]
+  114 words · balanced · provenance 100% · 24/62 evidence items used · repetition 0.7% · 3 sections
+  ~/Desktop/yt-reports/das-ist-der-furchtbarste-ort-im-universum-5_jcvQ0-vhI/REPORT.json
+--- output-language ja rc=0 0s

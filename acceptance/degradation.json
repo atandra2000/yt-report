@@ -1,0 +1,172 @@
+[
+  {
+    "mode": "B vlm-unavailable exit 0",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "mode": "B every frame records that no model ran",
+    "ok": true,
+    "detail": "{'skipped', 'unavailable'}"
+  },
+  {
+    "mode": "B the report says so",
+    "ok": true,
+    "detail": "# But what is a neural network? | Deep learning chapter 1\n\n*3Blue1Brown \u00b7 20171005 \u00b7 18:40"
+  },
+  {
+    "mode": "B no visual analysis is claimed",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "mode": "C ocr-unavailable exit 0",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "mode": "C the report says the text pass did not run",
+    "ok": true,
+    "detail": "# But what is a neural network? | Deep learning chapter 1\n\n*3Blue1Brown \u00b7 20171005 \u00b7 18:40"
+  },
+  {
+    "mode": "D visual-unavailable exit 0",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "mode": "D the report says nothing came from the visuals",
+    "ok": true,
+    "detail": "# But what is a neural network? | Deep learning chapter 1\n\n*3Blue1Brown \u00b7 20171005 \u00b7 18:40"
+  },
+  {
+    "mode": "D no on-screen provenance survives",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "mode": "D no model reading survives",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "mode": "E synthesis-unavailable exit 0",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "mode": "E the deterministic renderer ran",
+    "ok": true,
+    "detail": "deterministic"
+  },
+  {
+    "mode": "E the report is valid",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "mode": "G rate-limited exit 0",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "mode": "G no frame is recorded as read",
+    "ok": true,
+    "detail": "{'failed', 'skipped'}"
+  },
+  {
+    "mode": "G the report does not claim a model read anything",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "mode": "G the report says the visual pass did not happen",
+    "ok": true,
+    "detail": "# But what is a neural network? | Deep learning chapter 1\n\n*3Blue1Brown \u00b7 20171005 \u00b7 18:40"
+  },
+  {
+    "mode": "H auth-failure exit 0",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "mode": "H frames record the provider was unavailable",
+    "ok": true,
+    "detail": "{'skipped', 'unavailable'}"
+  },
+  {
+    "mode": "H the report does not claim a model read anything",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "mode": "I malformed-vlm exit 0",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "mode": "I the prose answer was rejected",
+    "ok": true,
+    "detail": "{'malformed', 'skipped'}"
+  },
+  {
+    "mode": "I nothing was invented from the prose",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "mode": "J malformed-synth exit 0",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "mode": "J the deterministic renderer took over",
+    "ok": true,
+    "detail": "deterministic"
+  },
+  {
+    "mode": "J the reason is recorded, not swallowed",
+    "ok": true,
+    "detail": "{\"valid\": true, \"metrics\": {\"report_word_count\": 476, \"detail_level\": \"balanced\", \"target_words\": 311, \"ceiling_words\": 1800, \"transcript_word_count\": 3357, \"compression_ratio\": 0.1418, \"evidence_item"
+  },
+  {
+    "mode": "J the shipped report is the validated deterministic one",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "mode": "F exit is non-zero",
+    "ok": true,
+    "detail": "rc=2"
+  },
+  {
+    "mode": "F the reported status names the reason",
+    "ok": true,
+    "detail": "ead /var/folders/2l/25rw604s7xv9lc6c0l73vgjr0000gn/T/tmp55sw7j1l/F/evidence.json: [Errno 2] No such file or directory: '/var/folders/2l/25rw604s7xv9lc6c0l73vgjr0000gn/T/tmp55sw7j1l/F/evidence.\"\n  }\n}\n"
+  },
+  {
+    "mode": "F the reason is actionable \u2014 it names the language and a remedy",
+    "ok": true,
+    "detail": "ead /var/folders/2l/25rw604s7xv9lc6c0l73vgjr0000gn/T/tmp55sw7j1l/F/evidence.json: [Errno 2] No such file or directory: '/var/folders/2l/25rw604s7xv9lc6c0l73vgjr0000gn/T/tmp55sw7j1l/F/evidence.\"\n  }\n}\n"
+  },
+  {
+    "mode": "F no REPORT.md is produced",
+    "ok": true,
+    "detail": "['FRAMES.md', 'URL.txt', 'contact-sheet-1.jpg', 'contact-sheet-2.jpg', 'frames', 'frames.json', 'meta.json', 'transcript.json', 'transcript.md', 'visual.json']"
+  },
+  {
+    "mode": "F meta.json is still written, recording the failure",
+    "ok": true,
+    "detail": "['FRAMES.md', 'URL.txt', 'contact-sheet-1.jpg', 'contact-sheet-2.jpg', 'frames', 'frames.json', 'meta.json', 'transcript.json', 'transcript.md', 'visual.json']"
+  },
+  {
+    "mode": "F the frames are still emitted, per the documented contract",
+    "ok": true,
+    "detail": "['FRAMES.md', 'URL.txt', 'contact-sheet-1.jpg', 'contact-sheet-2.jpg', 'frames', 'frames.json', 'meta.json', 'transcript.json', 'transcript.md', 'visual.json']"
+  },
+  {
+    "mode": "F meta.json records that no transcript was obtained",
+    "ok": true,
+    "detail": "{\"id\": \"aircAruvnKk\", \"title\": \"But what is a neural network? | Deep learning chapter 1\", \"channel\": \"3Blue1Brown\", \"channel_url\": \"https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw\", \"upload_d"
+  }
+]

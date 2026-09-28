@@ -1,0 +1,168 @@
+=== C_screen_tech  https://www.youtube.com/watch?v=4TvH-OZhwxI  2026-09-25T17:30:11Z
+ERROR: unable to download video data: HTTP Error 403: Forbidden
+{
+  "status": "ok",
+  "dir": "~/Desktop/yt-reports/ai-agents-explained-how-to-create-and-use-ai-agents-in-2026-4TvH-OZhwxI",
+  "url": "https://www.youtube.com/watch?v=4TvH-OZhwxI",
+  "video_id": "4TvH-OZhwxI",
+  "title": "AI Agents Explained: How to Create and Use AI Agents in 2026",
+  "duration_min": 24.5,
+  "chapters": 8,
+  "chapters_source": "ytdlp",
+  "transcript_lang": "en (auto)",
+  "asr": false,
+  "cached": false,
+  "words": 4182,
+  "transcript_note": null,
+  "visual": {
+    "status": "ok",
+    "frames": 96,
+    "measured_timestamps": 96,
+    "near_duplicates_dropped": 0,
+    "uniform_step_s": 30.6,
+    "contact_sheets": [
+      "contact-sheet-1.jpg",
+      "contact-sheet-2.jpg",
+      "contact-sheet-3.jpg",
+      "contact-sheet-4.jpg"
+    ]
+  },
+  "ocr": {
+    "status": "ok",
+    "backend": "apple-vision",
+    "frames_total": 96,
+    "frames_read": 95,
+    "frames_with_text": 57,
+    "frames_no_text": 38,
+    "frames_repeated": 1,
+    "low_confidence_frames": 3,
+    "medium_confidence_frames": 2,
+    "verbatim_eligible": 54,
+    "text_chars": 17768,
+    "mean_confidence": 0.9613,
+    "ocr_wall_s": 10.16,
+    "notes": null
+  },
+  "vlm": {
+    "status": "skipped",
+    "reason": "--vlm none"
+  },
+  "evidence": {
+    "status": "failed",
+    "error": "cannot read ~/Desktop/yt-reports/ai-agents-explained-how-to-create-and-use-ai-agents-in-2026-4TvH-OZhwxI/evidence.json: [Errno 2] No such file or directory: '~/"
+  }
+}
+--- fetch exit=0 84.6s
+--- artifact: ~/Desktop/yt-reports/ai-agents-explained-how-to-create-and-use-ai-agents-in-2026-4TvH-OZhwxI
+  note: model observations are read from the 'vlm' block of visual.json
+~/Desktop/yt-reports/ai-agents-explained-how-to-create-and-use-ai-agents-in-2026-4TvH-OZhwxI/evidence.json
+{
+  "alignment": {
+    "snippets_processed": 637,
+    "candidate_frames_considered": 520,
+    "aligned_snippets": 289,
+    "no_relevant_frame": 348,
+    "aligned_frame_links": 405,
+    "distinct_frames_used": 93,
+    "frames_total": 96,
+    "frames_unmeasured_excluded": 0,
+    "methods": {
+      "no-relevant-frame": 348,
+      "ocr-assisted": 6,
+      "overlap": 121,
+      "segment-context": 162
+    }
+  },
+  "semantic": {
+    "segments_processed": 8,
+    "observations_classified": 1051,
+    "observations_by_class": {
+      "ambiguous": 744,
+      "caption": 69,
+      "irrelevant": 77,
+      "meaningful": 104,
+      "ui-chrome": 46,
+      "unreadable": 11
+    },
+    "items_total": 180,
+    "items_by_type": {
+      "claim": 7,
+      "claim_metric": 1,
+      "comparison": 2,
+      "definition": 16,
+      "link": 7,
+      "model": 2,
+      "number": 95,
+      "organization": 5,
+      "person": 2,
+      "product": 39,
+      "tool": 3,
+      "topic": 1
+    },
+    "items_by_importance": {
+      "high": 100,
+      "medium": 72,
+      "unassessed": 8
+    },
+    "items_by_source": {
+      "metadata": 8,
+      "ocr": 104,
+      "transcript": 91
+    },
+    "screen_only_items": 85,
+    "cross_modal_items": 13,
+    "items_folded_by_dedup": 23,
+    "items_dropped_by_cap": 0,
+    "conflicts_detected": 0,
+    "model_calls": 0,
+    "extraction_calls": 8,
+    "cache_hits": 0,
+    "cache_hit_rate": 0.0,
+    "wall_s": 0.225,
+    "config": {
+      "min_steps_in_segment": 2,
+      "max_items_per_segment": 80,
+      "enable_comparisons": true,
+      "enable_steps": true,
+      "enable_entities": true,
+      "enable_vlm": true,
+      "policy": {
+        "base_transcript": 0.9,
+        "base_labelled_screen": 0.78,
+        "base_unlabelled_screen": 0.55,
+        "cross_modal_bonus": 0.08,
+        "hedge_penalty": 0.15,
+        "base_vlm": 0.6,
+        "ceiling": 0.95
+      }
+    }
+  },
+  "vlm": {
+    "status": "empty",
+    "backend": "openrouter",
+    "model": "openai/gpt-4o-mini",
+    "model_version": "openai/gpt-4o-mini",
+    "frames_total": 96,
+    "candidates_considered": 94,
+    "frames_selected": 8,
+    "frames_not_budgeted": 86,
+    "max_vlm_frames": 8,
+    "frames_analysed": 0,
+    "vlm_calls": 8,
+    "calls_ok": 0,
+    "calls_failed": 8,
+    "cache_hits": 0,
+    "cache_misses": 8,
+    "cache_hit_rate": 0.0,
+    "estimated_cost_usd": null,
+    "vlm_wall_s": 40.552,
+    "notes": null
+  }
+}
+VALID  ~/Desktop/yt-reports/ai-agents-explained-how-to-create-and-use-ai-agents-in-2026-4TvH-OZhwxI/evidence.json
+  synthesis unavailable — synthesis model returned no usable draft (failed: HTTP 402: This request requires more credits, or fewer max_tokens. You requested up to 8000 tokens, but can only afford 4288. To increase, visit https://openrouter.ai/settings/credits and add more credits)
+VALID  ~/Desktop/yt-reports/ai-agents-explained-how-to-create-and-use-ai-agents-in-2026-4TvH-OZhwxI/REPORT.md  [deterministic]
+  743 words · balanced · provenance 100% · 69/180 evidence items used · repetition 5.4% · 6 sections
+  ~/Desktop/yt-reports/ai-agents-explained-how-to-create-and-use-ai-agents-in-2026-4TvH-OZhwxI/REPORT.json
+--- build exit=0 41.5s
+=== C_screen_tech done fetch=0 build=0

@@ -1,0 +1,607 @@
+{
+  "critic": "not exercised. No configured provider had credit, and the second candidate produced neither a schema-conforming observation nor a draft within any budget the pipeline should spend. The validator is the boundary under test, and every case runs with no model in the loop \u2014 which is the property that matters if the critic is assistance rather than the boundary.",
+  "totals": {
+    "1 change one number": {
+      "applied": 9,
+      "detected": 9,
+      "repaired": 0
+    },
+    "2 add an unsupported factual sentence": {
+      "applied": 10,
+      "detected": 10,
+      "repaired": 0
+    },
+    "3 remove an important qualifier": {
+      "applied": 2,
+      "detected": 2,
+      "repaired": 0
+    },
+    "4 alter one URL": {
+      "applied": 5,
+      "detected": 5,
+      "repaired": 0
+    },
+    "5 reverse one comparison": {
+      "applied": 0,
+      "detected": 0,
+      "repaired": 0
+    },
+    "6 remove a conflict disclosure": {
+      "applied": 2,
+      "detected": 2,
+      "repaired": 0
+    },
+    "7 invent a visual relationship": {
+      "applied": 10,
+      "detected": 10,
+      "repaired": 0
+    }
+  },
+  "applied": 38,
+  "detected": 38,
+  "silently_repaired": 0,
+  "write_gate": {
+    "case": "write gate",
+    "detected": true,
+    "exit_code": 1,
+    "previous_file_untouched": true,
+    "reason": " 'publication' is not present in the evidence document\n  BLOCK  claim-unsupported  executive_summary: 'confirmed' is not present in the evidence document\nREPORT.md not written: 2 grounding failure(s)\n"
+  },
+  "results": [
+    {
+      "source": "ai-agents-explained-how-to-create-and-use-ai-agents-in-2026-4TvH-OZhwxI",
+      "source_kind": "real",
+      "case": "1 change one number",
+      "corruption": "figure 10 -> 100, a figure the document contains elsewhere but this block does not cite",
+      "expected": [
+        "number-misattributed"
+      ],
+      "codes": [
+        "number-misattributed"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "ai-agents-explained-how-to-create-and-use-ai-agents-in-2026-4TvH-OZhwxI",
+      "source_kind": "real",
+      "case": "2 add an unsupported factual sentence",
+      "corruption": "an invented sentence about independent confirmation",
+      "expected": [
+        "claim-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "ai-agents-explained-how-to-create-and-use-ai-agents-in-2026-4TvH-OZhwxI",
+      "source_kind": "real",
+      "case": "4 alter one URL",
+      "corruption": "the url https://openclaw.ai/install.ps1 was rewritten to a different host",
+      "expected": [
+        "url-unsupported"
+      ],
+      "codes": [
+        "url-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "ai-agents-explained-how-to-create-and-use-ai-agents-in-2026-4TvH-OZhwxI",
+      "source_kind": "real",
+      "case": "7 invent a visual relationship",
+      "corruption": "an invented relationship between visual elements",
+      "expected": [
+        "visual-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported",
+        "visual-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "but-what-is-a-neural-network-deep-learning-chapter-1-aircAruvnKk",
+      "source_kind": "real",
+      "case": "1 change one number",
+      "corruption": "figure 784 -> 15, a figure the document contains elsewhere but this block does not cite",
+      "expected": [
+        "number-misattributed"
+      ],
+      "codes": [
+        "number-misattributed"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "but-what-is-a-neural-network-deep-learning-chapter-1-aircAruvnKk",
+      "source_kind": "real",
+      "case": "2 add an unsupported factual sentence",
+      "corruption": "an invented sentence about independent confirmation",
+      "expected": [
+        "claim-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "but-what-is-a-neural-network-deep-learning-chapter-1-aircAruvnKk",
+      "source_kind": "real",
+      "case": "4 alter one URL",
+      "corruption": "the url https://www.patreon.com/3blue1brown was rewritten to a different host",
+      "expected": [
+        "url-unsupported"
+      ],
+      "codes": [
+        "url-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "but-what-is-a-neural-network-deep-learning-chapter-1-aircAruvnKk",
+      "source_kind": "real",
+      "case": "7 invent a visual relationship",
+      "corruption": "an invented relationship between visual elements",
+      "expected": [
+        "visual-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported",
+        "visual-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "das-ist-der-furchtbarste-ort-im-universum-5_jcvQ0-vhI",
+      "source_kind": "real",
+      "case": "1 change one number",
+      "corruption": "figure 60 -> 17, a figure the document contains elsewhere but this block does not cite",
+      "expected": [
+        "number-misattributed"
+      ],
+      "codes": [
+        "number-misattributed",
+        "number-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "das-ist-der-furchtbarste-ort-im-universum-5_jcvQ0-vhI",
+      "source_kind": "real",
+      "case": "2 add an unsupported factual sentence",
+      "corruption": "an invented sentence about independent confirmation",
+      "expected": [
+        "claim-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "das-ist-der-furchtbarste-ort-im-universum-5_jcvQ0-vhI",
+      "source_kind": "real",
+      "case": "4 alter one URL",
+      "corruption": "the url https://www.incogni.com/kurzgesagtde was rewritten to a different host",
+      "expected": [
+        "url-unsupported"
+      ],
+      "codes": [
+        "url-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "das-ist-der-furchtbarste-ort-im-universum-5_jcvQ0-vhI",
+      "source_kind": "real",
+      "case": "7 invent a visual relationship",
+      "corruption": "an invented relationship between visual elements",
+      "expected": [
+        "visual-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported",
+        "visual-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "google-s-project-suncatcher-is-sending-ai-to-space-sonnet-5-5-500-chat-h5QwrHhW28Q",
+      "source_kind": "real",
+      "case": "1 change one number",
+      "corruption": "figure 100 -> 10, a figure the document contains elsewhere but this block does not cite",
+      "expected": [
+        "number-misattributed"
+      ],
+      "codes": [
+        "number-misattributed"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "google-s-project-suncatcher-is-sending-ai-to-space-sonnet-5-5-500-chat-h5QwrHhW28Q",
+      "source_kind": "real",
+      "case": "2 add an unsupported factual sentence",
+      "corruption": "an invented sentence about independent confirmation",
+      "expected": [
+        "claim-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "google-s-project-suncatcher-is-sending-ai-to-space-sonnet-5-5-500-chat-h5QwrHhW28Q",
+      "source_kind": "real",
+      "case": "3 remove an important qualifier",
+      "corruption": "the hedge the evidence records on itm-1003 was removed",
+      "expected": [
+        "hedge-dropped"
+      ],
+      "codes": [
+        "hedge-dropped"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "google-s-project-suncatcher-is-sending-ai-to-space-sonnet-5-5-500-chat-h5QwrHhW28Q",
+      "source_kind": "real",
+      "case": "4 alter one URL",
+      "corruption": "the url https://monid.ai?fpr=woai was rewritten to a different host",
+      "expected": [
+        "url-unsupported"
+      ],
+      "codes": [
+        "url-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "google-s-project-suncatcher-is-sending-ai-to-space-sonnet-5-5-500-chat-h5QwrHhW28Q",
+      "source_kind": "real",
+      "case": "6 remove a conflict disclosure",
+      "corruption": "the unresolved conflict was removed from the report",
+      "expected": [
+        "conflict-dropped"
+      ],
+      "codes": [
+        "conflict-dropped"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "google-s-project-suncatcher-is-sending-ai-to-space-sonnet-5-5-500-chat-h5QwrHhW28Q",
+      "source_kind": "real",
+      "case": "7 invent a visual relationship",
+      "corruption": "an invented relationship between visual elements",
+      "expected": [
+        "visual-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported",
+        "visual-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "this-new-jev-claude-os-just-changed-every-ai-workflow-EOdXR6lU5ZA",
+      "source_kind": "real",
+      "case": "1 change one number",
+      "corruption": "figure 10 -> 100, a figure the document contains elsewhere but this block does not cite",
+      "expected": [
+        "number-misattributed"
+      ],
+      "codes": [
+        "number-misattributed"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "this-new-jev-claude-os-just-changed-every-ai-workflow-EOdXR6lU5ZA",
+      "source_kind": "real",
+      "case": "2 add an unsupported factual sentence",
+      "corruption": "an invented sentence about independent confirmation",
+      "expected": [
+        "claim-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "this-new-jev-claude-os-just-changed-every-ai-workflow-EOdXR6lU5ZA",
+      "source_kind": "real",
+      "case": "4 alter one URL",
+      "corruption": "the url https://www.skool.com/chase-ai was rewritten to a different host",
+      "expected": [
+        "url-unsupported"
+      ],
+      "codes": [
+        "url-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "this-new-jev-claude-os-just-changed-every-ai-workflow-EOdXR6lU5ZA",
+      "source_kind": "real",
+      "case": "7 invent a visual relationship",
+      "corruption": "an invented relationship between visual elements",
+      "expected": [
+        "visual-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported",
+        "visual-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "unresolved_conflict",
+      "source_kind": "fixture",
+      "case": "1 change one number",
+      "corruption": "figure 75 -> 20260101, a figure the document contains elsewhere but this block does not cite",
+      "expected": [
+        "number-misattributed"
+      ],
+      "codes": [
+        "number-misattributed",
+        "number-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "unresolved_conflict",
+      "source_kind": "fixture",
+      "case": "2 add an unsupported factual sentence",
+      "corruption": "an invented sentence about independent confirmation",
+      "expected": [
+        "claim-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "unresolved_conflict",
+      "source_kind": "fixture",
+      "case": "6 remove a conflict disclosure",
+      "corruption": "the unresolved conflict was removed from the report",
+      "expected": [
+        "conflict-dropped"
+      ],
+      "codes": [
+        "conflict-dropped"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "unresolved_conflict",
+      "source_kind": "fixture",
+      "case": "7 invent a visual relationship",
+      "corruption": "an invented relationship between visual elements",
+      "expected": [
+        "visual-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported",
+        "visual-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "chart_heavy",
+      "source_kind": "fixture",
+      "case": "2 add an unsupported factual sentence",
+      "corruption": "an invented sentence about independent confirmation",
+      "expected": [
+        "claim-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "chart_heavy",
+      "source_kind": "fixture",
+      "case": "7 invent a visual relationship",
+      "corruption": "an invented relationship between visual elements",
+      "expected": [
+        "visual-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported",
+        "visual-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "table_heavy",
+      "source_kind": "fixture",
+      "case": "1 change one number",
+      "corruption": "figure 20 -> 20260101, a figure the document contains elsewhere but this block does not cite",
+      "expected": [
+        "number-misattributed"
+      ],
+      "codes": [
+        "number-misattributed",
+        "number-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "table_heavy",
+      "source_kind": "fixture",
+      "case": "2 add an unsupported factual sentence",
+      "corruption": "an invented sentence about independent confirmation",
+      "expected": [
+        "claim-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "table_heavy",
+      "source_kind": "fixture",
+      "case": "7 invent a visual relationship",
+      "corruption": "an invented relationship between visual elements",
+      "expected": [
+        "visual-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported",
+        "visual-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "hedged_claim",
+      "source_kind": "fixture",
+      "case": "1 change one number",
+      "corruption": "figure 500 -> 20260101, a figure the document contains elsewhere but this block does not cite",
+      "expected": [
+        "number-misattributed"
+      ],
+      "codes": [
+        "number-misattributed",
+        "number-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "hedged_claim",
+      "source_kind": "fixture",
+      "case": "2 add an unsupported factual sentence",
+      "corruption": "an invented sentence about independent confirmation",
+      "expected": [
+        "claim-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "hedged_claim",
+      "source_kind": "fixture",
+      "case": "3 remove an important qualifier",
+      "corruption": "the hedge the evidence records on itm-003 was removed",
+      "expected": [
+        "hedge-dropped"
+      ],
+      "codes": [
+        "claim-unsupported",
+        "hedge-dropped"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "hedged_claim",
+      "source_kind": "fixture",
+      "case": "7 invent a visual relationship",
+      "corruption": "an invented relationship between visual elements",
+      "expected": [
+        "visual-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported",
+        "visual-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "technical_lecture",
+      "source_kind": "fixture",
+      "case": "1 change one number",
+      "corruption": "figure 120 -> 10, a figure the document contains elsewhere but this block does not cite",
+      "expected": [
+        "number-misattributed"
+      ],
+      "codes": [
+        "number-misattributed",
+        "number-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "technical_lecture",
+      "source_kind": "fixture",
+      "case": "2 add an unsupported factual sentence",
+      "corruption": "an invented sentence about independent confirmation",
+      "expected": [
+        "claim-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "source": "technical_lecture",
+      "source_kind": "fixture",
+      "case": "7 invent a visual relationship",
+      "corruption": "an invented relationship between visual elements",
+      "expected": [
+        "visual-unsupported"
+      ],
+      "codes": [
+        "claim-unsupported",
+        "visual-unsupported"
+      ],
+      "detected": true,
+      "silently_repaired": false
+    },
+    {
+      "case": "write gate",
+      "detected": true,
+      "exit_code": 1,
+      "previous_file_untouched": true,
+      "reason": " 'publication' is not present in the evidence document\n  BLOCK  claim-unsupported  executive_summary: 'confirmed' is not present in the evidence document\nREPORT.md not written: 2 grounding failure(s)\n"
+    }
+  ]
+}

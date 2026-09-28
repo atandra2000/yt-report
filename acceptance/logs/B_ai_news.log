@@ -1,0 +1,172 @@
+=== B_ai_news  https://www.youtube.com/watch?v=h5QwrHhW28Q  2026-09-25T17:32:02Z
+{
+  "status": "ok",
+  "dir": "~/Desktop/yt-reports/google-s-project-suncatcher-is-sending-ai-to-space-sonnet-5-5-500-chat-h5QwrHhW28Q",
+  "url": "https://www.youtube.com/watch?v=h5QwrHhW28Q",
+  "video_id": "h5QwrHhW28Q",
+  "title": "Google's Project Suncatcher IS SENDING AI TO SPACE!?, Sonnet 5.5, $500 ChatGPT Plan & More! AI NEWS",
+  "duration_min": 17.8,
+  "chapters": 9,
+  "chapters_source": "ytdlp",
+  "transcript_lang": "en (auto)",
+  "asr": false,
+  "cached": true,
+  "words": 2829,
+  "transcript_note": null,
+  "visual": {
+    "status": "ok",
+    "frames": 71,
+    "measured_timestamps": 71,
+    "near_duplicates_dropped": 1,
+    "uniform_step_s": 29.6,
+    "contact_sheets": [
+      "contact-sheet-1.jpg",
+      "contact-sheet-2.jpg",
+      "contact-sheet-3.jpg"
+    ]
+  },
+  "ocr": {
+    "status": "ok",
+    "backend": "apple-vision",
+    "frames_total": 71,
+    "frames_read": 71,
+    "frames_with_text": 49,
+    "frames_no_text": 22,
+    "frames_repeated": 0,
+    "low_confidence_frames": 2,
+    "medium_confidence_frames": 2,
+    "verbatim_eligible": 47,
+    "text_chars": 15591,
+    "mean_confidence": 0.9517,
+    "ocr_wall_s": 0.039,
+    "notes": null
+  },
+  "vlm": {
+    "status": "skipped",
+    "reason": "--vlm none"
+  },
+  "evidence": {
+    "status": "ok",
+    "items": 44,
+    "segments": 9,
+    "snippets": 432,
+    "frames": 71,
+    "blocking_errors": 0,
+    "provenance_coverage": 1.0,
+    "ocr_status": null
+  }
+}
+--- fetch exit=0 46.7s
+--- artifact: ~/Desktop/yt-reports/google-s-project-suncatcher-is-sending-ai-to-space-sonnet-5-5-500-chat-h5QwrHhW28Q
+  note: model observations are read from the 'vlm' block of visual.json
+~/Desktop/yt-reports/google-s-project-suncatcher-is-sending-ai-to-space-sonnet-5-5-500-chat-h5QwrHhW28Q/evidence.json
+{
+  "alignment": {
+    "snippets_processed": 432,
+    "candidate_frames_considered": 339,
+    "aligned_snippets": 200,
+    "no_relevant_frame": 232,
+    "aligned_frame_links": 269,
+    "distinct_frames_used": 63,
+    "frames_total": 71,
+    "frames_unmeasured_excluded": 0,
+    "methods": {
+      "no-relevant-frame": 232,
+      "ocr-assisted": 8,
+      "overlap": 81,
+      "segment-context": 111
+    }
+  },
+  "semantic": {
+    "segments_processed": 9,
+    "observations_classified": 669,
+    "observations_by_class": {
+      "ambiguous": 516,
+      "caption": 57,
+      "irrelevant": 15,
+      "meaningful": 38,
+      "ui-chrome": 36,
+      "unreadable": 7
+    },
+    "items_total": 109,
+    "items_by_type": {
+      "claim": 4,
+      "claim_metric": 3,
+      "comparison": 3,
+      "definition": 12,
+      "link": 27,
+      "model": 4,
+      "number": 36,
+      "organization": 4,
+      "person": 2,
+      "product": 11,
+      "tool": 2,
+      "topic": 1
+    },
+    "items_by_importance": {
+      "high": 44,
+      "medium": 35,
+      "unassessed": 30
+    },
+    "items_by_source": {
+      "metadata": 30,
+      "ocr": 39,
+      "transcript": 59
+    },
+    "screen_only_items": 22,
+    "cross_modal_items": 7,
+    "items_folded_by_dedup": 18,
+    "items_dropped_by_cap": 0,
+    "conflicts_detected": 4,
+    "model_calls": 0,
+    "extraction_calls": 9,
+    "cache_hits": 0,
+    "cache_hit_rate": 0.0,
+    "wall_s": 0.093,
+    "config": {
+      "min_steps_in_segment": 2,
+      "max_items_per_segment": 80,
+      "enable_comparisons": true,
+      "enable_steps": true,
+      "enable_entities": true,
+      "enable_vlm": true,
+      "policy": {
+        "base_transcript": 0.9,
+        "base_labelled_screen": 0.78,
+        "base_unlabelled_screen": 0.55,
+        "cross_modal_bonus": 0.08,
+        "hedge_penalty": 0.15,
+        "base_vlm": 0.6,
+        "ceiling": 0.95
+      }
+    }
+  },
+  "vlm": {
+    "status": "empty",
+    "backend": "openrouter",
+    "model": "openai/gpt-4o-mini",
+    "model_version": "openai/gpt-4o-mini",
+    "frames_total": 71,
+    "candidates_considered": 65,
+    "frames_selected": 8,
+    "frames_not_budgeted": 57,
+    "max_vlm_frames": 8,
+    "frames_analysed": 0,
+    "vlm_calls": 8,
+    "calls_ok": 0,
+    "calls_failed": 8,
+    "cache_hits": 0,
+    "cache_misses": 8,
+    "cache_hit_rate": 0.0,
+    "estimated_cost_usd": null,
+    "vlm_wall_s": 6.03,
+    "notes": null
+  }
+}
+VALID  ~/Desktop/yt-reports/google-s-project-suncatcher-is-sending-ai-to-space-sonnet-5-5-500-chat-h5QwrHhW28Q/evidence.json
+  synthesis unavailable — synthesis model returned no usable draft (failed: HTTP 402: This request requires more credits, or fewer max_tokens. You requested up to 8000 tokens, but can only afford 4288. To increase, visit https://openrouter.ai/settings/credits and add more credits)
+VALID  ~/Desktop/yt-reports/google-s-project-suncatcher-is-sending-ai-to-space-sonnet-5-5-500-chat-h5QwrHhW28Q/REPORT.md  [deterministic]
+  833 words · balanced · provenance 100% · 65/109 evidence items used · repetition 4.3% · 6 sections
+  ~/Desktop/yt-reports/google-s-project-suncatcher-is-sending-ai-to-space-sonnet-5-5-500-chat-h5QwrHhW28Q/REPORT.json
+--- build exit=0 6.8s
+=== B_ai_news done fetch=0 build=0

@@ -1,0 +1,159 @@
+=== D_visual_lecture  https://www.youtube.com/watch?v=aircAruvnKk  2026-09-25T17:32:17Z
+{
+  "status": "ok",
+  "dir": "~/Desktop/yt-reports/but-what-is-a-neural-network-deep-learning-chapter-1-aircAruvnKk",
+  "url": "https://www.youtube.com/watch?v=aircAruvnKk",
+  "video_id": "aircAruvnKk",
+  "title": "But what is a neural network? | Deep learning chapter 1",
+  "duration_min": 18.7,
+  "chapters": 12,
+  "chapters_source": "ytdlp",
+  "transcript_lang": "en (human)",
+  "asr": false,
+  "cached": false,
+  "words": 3357,
+  "transcript_note": null,
+  "visual": {
+    "status": "ok",
+    "frames": 37,
+    "measured_timestamps": 37,
+    "near_duplicates_dropped": 2,
+    "uniform_step_s": 30.3,
+    "contact_sheets": [
+      "contact-sheet-1.jpg",
+      "contact-sheet-2.jpg"
+    ]
+  },
+  "ocr": {
+    "status": "ok",
+    "backend": "apple-vision",
+    "frames_total": 37,
+    "frames_read": 37,
+    "frames_with_text": 33,
+    "frames_no_text": 4,
+    "frames_repeated": 0,
+    "low_confidence_frames": 7,
+    "medium_confidence_frames": 7,
+    "verbatim_eligible": 26,
+    "text_chars": 1768,
+    "mean_confidence": 0.8932,
+    "ocr_wall_s": 9.497,
+    "notes": null
+  },
+  "vlm": {
+    "status": "skipped",
+    "reason": "--vlm none"
+  },
+  "evidence": {
+    "status": "failed",
+    "error": "cannot read ~/Desktop/yt-reports/but-what-is-a-neural-network-deep-learning-chapter-1-aircAruvnKk/evidence.json: [Errno 2] No such file or directory: '~/Desktop"
+  }
+}
+--- fetch exit=0 75.5s
+--- artifact: ~/Desktop/yt-reports/but-what-is-a-neural-network-deep-learning-chapter-1-aircAruvnKk
+  note: model observations are read from the 'vlm' block of visual.json
+~/Desktop/yt-reports/but-what-is-a-neural-network-deep-learning-chapter-1-aircAruvnKk/evidence.json
+{
+  "alignment": {
+    "snippets_processed": 286,
+    "candidate_frames_considered": 108,
+    "aligned_snippets": 99,
+    "no_relevant_frame": 187,
+    "aligned_frame_links": 100,
+    "distinct_frames_used": 36,
+    "frames_total": 37,
+    "frames_unmeasured_excluded": 0,
+    "methods": {
+      "no-relevant-frame": 187,
+      "overlap": 32,
+      "segment-context": 67
+    }
+  },
+  "semantic": {
+    "segments_processed": 12,
+    "observations_classified": 248,
+    "observations_by_class": {
+      "ambiguous": 189,
+      "caption": 31,
+      "irrelevant": 1,
+      "meaningful": 14,
+      "ui-chrome": 1,
+      "unreadable": 12
+    },
+    "items_total": 53,
+    "items_by_type": {
+      "claim": 4,
+      "definition": 14,
+      "link": 18,
+      "number": 11,
+      "organization": 2,
+      "product": 3,
+      "topic": 1
+    },
+    "items_by_importance": {
+      "high": 13,
+      "medium": 18,
+      "unassessed": 22
+    },
+    "items_by_source": {
+      "metadata": 22,
+      "ocr": 14,
+      "transcript": 21
+    },
+    "screen_only_items": 10,
+    "cross_modal_items": 1,
+    "items_folded_by_dedup": 4,
+    "items_dropped_by_cap": 0,
+    "conflicts_detected": 0,
+    "model_calls": 0,
+    "extraction_calls": 12,
+    "cache_hits": 0,
+    "cache_hit_rate": 0.0,
+    "wall_s": 0.033,
+    "config": {
+      "min_steps_in_segment": 2,
+      "max_items_per_segment": 80,
+      "enable_comparisons": true,
+      "enable_steps": true,
+      "enable_entities": true,
+      "enable_vlm": true,
+      "policy": {
+        "base_transcript": 0.9,
+        "base_labelled_screen": 0.78,
+        "base_unlabelled_screen": 0.55,
+        "cross_modal_bonus": 0.08,
+        "hedge_penalty": 0.15,
+        "base_vlm": 0.6,
+        "ceiling": 0.95
+      }
+    }
+  },
+  "vlm": {
+    "status": "empty",
+    "backend": "openrouter",
+    "model": "openai/gpt-4o-mini",
+    "model_version": "openai/gpt-4o-mini",
+    "frames_total": 37,
+    "candidates_considered": 37,
+    "frames_selected": 8,
+    "frames_not_budgeted": 29,
+    "max_vlm_frames": 8,
+    "frames_analysed": 0,
+    "vlm_calls": 8,
+    "calls_ok": 0,
+    "calls_failed": 8,
+    "cache_hits": 0,
+    "cache_misses": 8,
+    "cache_hit_rate": 0.0,
+    "estimated_cost_usd": null,
+    "vlm_wall_s": 8.699,
+    "notes": null
+  }
+}
+VALID  ~/Desktop/yt-reports/but-what-is-a-neural-network-deep-learning-chapter-1-aircAruvnKk/evidence.json
+  synthesis unavailable — synthesis model returned no usable draft (failed: HTTP 402: This request requires more credits, or fewer max_tokens. You requested up to 8000 tokens, but can only afford 1979. To increase, visit https://openrouter.ai/settings/credits and add more credits)
+VALID  ~/Desktop/yt-reports/but-what-is-a-neural-network-deep-learning-chapter-1-aircAruvnKk/REPORT.md  [deterministic]
+  476 words · balanced · provenance 100% · 33/53 evidence items used · repetition 5.2% · 6 sections
+  ~/Desktop/yt-reports/but-what-is-a-neural-network-deep-learning-chapter-1-aircAruvnKk/REPORT.json
+--- build exit=0 9.3s
+=== D_visual_lecture done fetch=0 build=0
