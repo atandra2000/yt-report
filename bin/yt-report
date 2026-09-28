@@ -1,0 +1,98 @@
+#!/usr/bin/env bash
+# yt-report — a YouTube URL in, a grounded written report out.
+#
+#   yt-report "<youtube-url>" [options]
+#   yt-report --help
+#
+# The two existing stages in the order they must run, and nothing else:
+# `yt_fetch.py` produces the artifact directory, `build_evidence.py` builds,
+# validates and renders from it. No logic lives here that is not already in one
+# of those two, because a wrapper that grows logic becomes a third
+# implementation of something the pipeline already does.
+#
+# The fetcher is called with the URL and nothing else. Forwarding its options
+# would mean this script owning a list of flags that belong to another module,
+# which is how the two drift apart — and anyone who wants them has
+# `scripts/yt_fetch.py`, which is documented on its own. Everything after the
+# URL goes to the build stage, whose options are listed by `--help`.
+#
+# The two flags worth naming, because they cost money or change what the report
+# claims:
+#
+#   --vlm-provider NAME --vlm-model ID        interpret the frames with a model
+#   --synth-provider NAME --synth-model ID    write the prose with a model
+#
+# Both are off unless asked for. Exit status is the evidence layer's: 0 ok,
+# 2 no captions and ASR disabled or failed, 3 no captions obtained, 4 the
+# evidence layer rejected what it built, 70 no artifact directory was written.
+#
+# Subcommands, each of which is the script that owns the work:
+#
+#   yt-report vlm-doctor        can this provider produce a valid observation?
+#   yt-report synthesis-doctor  can this model write a report from evidence?
+#   yt-report critic-doctor     can it find a planted defect, and stay quiet?
+#   yt-report eval-live URL     one budgeted, measured run against real providers
+#   yt-report release-check     qualify a provider, cheapest sequence first
+#   yt-report selftest          the offline test suite
+#
+# The three doctors take an artifact directory optionally and fall back to a
+# built-in fixture, so they run with no video and no download. `release-check`
+# asks which of those capabilities a provider has actually been shown to have,
+# and answers UNTESTED where the question was never reached — which is the answer
+# when there is no credit.
+set -uo pipefail
+
+here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+scripts="$(dirname "$here")/scripts"
+
+# The header comment, read by structure rather than by line number. A hard-coded
+# range silently truncates the day a command is added to the list above, which is
+# how `--help` ends up documenting less than the script accepts.
+usage() { sed -n '2,/^[^#]/p' "${BASH_SOURCE[0]}" | sed '$d; s/^# \{0,1\}//'; }
+
+# Subcommands are dispatched to the script that owns them rather than
+# reimplemented here, for the reason the rest of this file gives about the two
+# stages: a wrapper that grows logic becomes a second implementation of
+# something the pipeline already does. Each takes its own `--help`.
+case "${1:-}" in
+  --help|-h) usage; exit 0 ;;
+  vlm-doctor)     shift; exec uv run "$scripts/vlm_doctor.py" "$@" ;;
+  synthesis-doctor) shift; exec uv run "$scripts/synth_doctor.py" "$@" ;;
+  critic-doctor)  shift; exec uv run "$scripts/critic_doctor.py" "$@" ;;
+  eval-live)      shift; exec uv run "$scripts/eval_live.py" "$@" ;;
+  release-check)  shift; exec uv run "$scripts/release_check.py" "$@" ;;
+  selftest)       shift; exec uv run "$scripts/selftest.py" "$@" ;;
+  "") echo "yt-report: a YouTube URL is required." >&2
+       echo "Try 'yt-report --help'." >&2
+       exit 64 ;;
+esac
+
+url="$1"; shift
+
+echo "yt-report: fetching $url" >&2
+uv run "$scripts/yt_fetch.py" "$url"
+rc=$?
+if [ "$rc" -ne 0 ]; then
+  echo "yt-report: the fetch did not complete (exit $rc); no report was written." >&2
+  exit "$rc"
+fi
+
+# `yt_fetch.py` names the directory from the title and the video id, so the
+# wrapper finds what the fetcher just wrote by globbing on the id rather than
+# by being told — the fetcher has no reason to change its output shape for a
+# wrapper's convenience.
+vid="$(printf '%s' "$url" | sed -E 's#.*[?&]v=([A-Za-z0-9_-]{6,}).*#\1#')"
+dir="$(ls -dt "$HOME/Desktop/yt-reports"/*-"$vid" 2>/dev/null | head -1)"
+if [ -z "$dir" ]; then
+  echo "yt-report: the fetch finished but wrote no artifact directory for '$vid'." >&2
+  echo "yt-report: expected one under $HOME/Desktop/yt-reports." >&2
+  exit 70
+fi
+
+echo "yt-report: building the report in $dir" >&2
+uv run "$scripts/build_evidence.py" "$dir" "$@"
+rc=$?
+if [ "$rc" -ne 0 ]; then
+  echo "yt-report: no report was written (exit $rc). The artifacts in $dir say why." >&2
+fi
+exit "$rc"

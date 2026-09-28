@@ -1,4 +1,9 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --quiet --script
+# /// script
+# requires-python = ">=3.10"
+# dependencies = ["pillow>=10.0"]
+# ///
+
 """Tile every sampled frame into labelled contact sheets.
 
 Two problems it exists to solve, both of which silently corrupt a report:
