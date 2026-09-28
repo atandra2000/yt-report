@@ -15,9 +15,22 @@ frames/
 contact-sheet*.jpg
 FRAMES.md
 transcript.md
+transcript.json
+visual.json
+alignment.json
+evidence.json
+validation.json
 meta.json
 REPORT.md
+REPORT.json
+report_validation.json
 URL.txt
+
+# Acceptance run pointers — absolute paths to this machine's artifact dirs
+acceptance/logs/*.dir
 
 # Agent session state — machine-local, not product source
 .claude/
+
+# Stray editor/CLI backups — never product source
+*.bak
