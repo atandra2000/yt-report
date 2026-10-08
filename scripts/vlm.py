@@ -133,6 +133,9 @@ The OCR text is a reading of the pixels, not a description: where you disagree w
 `uncertainties` rather than silently replacing it, and do not reproduce an OCR reading you cannot \
 see in the frame yourself.
 
+Return your observation by calling the provided tool exactly once. Do not write the \
+observation as prose.
+
 Content-specific rules:
 - table: put every cell in `numbers` with its `row` and `column` labels attached. Do not flatten the \
 table into a list of values.
@@ -816,14 +819,29 @@ class AnthropicProvider(VisionLanguageProvider):
         body = {
             "model": self.model,
             "max_tokens": self.max_tokens,
-            # Tool choice is forced rather than offered. A model left free to
-            # answer in prose returns prose, and prose is not checkable — the
+            # The observation must be schema-checkable. A model left free to
+            # answer in prose returns prose, and prose is not checkable: the
             # whole reason this pass has a schema is that "a bar chart comparing
             # two models" cannot be tested against the pixels and
             # `numbers[0].row == "Model A"` can.
-            "tools": [{"name": TOOL_NAME, "description": "Record what this frame shows.",
+            #
+            # Forced tool_choice ({"type": "tool", ...}) returns a 400 on
+            # Claude Opus 5.5 / Opus 5 / Sonnet 5.5 / Fable 5.1, so the call is
+            # requested under "auto" and steered from _INSTRUCTION. Do not raise
+            # default_model above claude-sonnet-5 before re-checking this.
+            "tools": [{"name": TOOL_NAME,
+                       "description": (
+                           "Record what this frame shows, as structured evidence. "
+                           "Fill only the fields the frame actually supports: a value "
+                           "needs the row and column it was read from, a diagram edge "
+                           "needs both endpoints, and an action needs to be visible on "
+                           "screen. Leave every other field out rather than inferring "
+                           "it. If the frame carries no readable on-screen content, "
+                           "record nothing beyond the content type. Named things go "
+                           "under the kind the surrounding vocabulary establishes; an "
+                           "untyped name stays untyped."),
                        "input_schema": OBSERVATION_SCHEMA}],
-            "tool_choice": {"type": "tool", "name": TOOL_NAME},
+            "tool_choice": {"type": "auto"},
             "system": _INSTRUCTION,
             "messages": [{"role": "user", "content": self._messages(frame_path, context)}],
         }

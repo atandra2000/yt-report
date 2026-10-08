@@ -34,3 +34,5 @@ acceptance/logs/*.dir
 
 # Stray editor/CLI backups — never product source
 *.bak
+
+.codegraph/

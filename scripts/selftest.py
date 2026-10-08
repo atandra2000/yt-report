@@ -2711,8 +2711,11 @@ def t_vlm_failures(d: Path) -> None:
           "api_key" not in json.dumps(p) and "x-api-key" not in json.dumps(p))
 
     # What would actually go over the wire, asserted without sending it. The
-    # forced tool call is the load-bearing part: a model left free to answer in
-    # prose returns prose, and prose is not checkable against the frame.
+    # schema-checkable observation is the load-bearing part: a model left free
+    # to answer in prose returns prose, and prose is not checkable against the
+    # frame. Forced tool_choice used to supply that guarantee, but the forced
+    # shape returns a 400 on current Claude models, so the call is now steered
+    # from _INSTRUCTION under tool_choice "auto".
     sent: dict = {}
 
     def capture(body: dict) -> dict:
@@ -2726,9 +2729,10 @@ def t_vlm_failures(d: Path) -> None:
               context_by_frame={"chart": {"video_title": "T", "timestamp": "00:10.0",
                                           "nearby_transcript": "here it is",
                                           "ocr_text": VLM_SCREEN_TEXT["chart"]}})
-    check("W45 the request forces the schema rather than offering it",
-          sent.get("tool_choice") == {"type": "tool", "name": V.TOOL_NAME}
-          and sent["tools"][0]["input_schema"] == V.OBSERVATION_SCHEMA,
+    check("W45 the request carries the schema and steers the call rather than forcing it",
+          sent.get("tool_choice") == {"type": "auto"}
+          and sent["tools"][0]["input_schema"] == V.OBSERVATION_SCHEMA
+          and "calling the provided tool exactly once" in sent["system"],
           str(sent.get("tool_choice")))
     check("W46 exactly one image is sent, base64, with the type the file actually is",
           [b["type"] for b in sent["messages"][0]["content"]] == ["image", "text"]
